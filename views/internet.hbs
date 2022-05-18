@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internet</title>
+    <link rel="stylesheet" href="/css/internet.css">
+</head>
+<body>
+    {{>nav}}
+        
+        <div class="grey">
+            <div class="background">
+                <p class="our">INTERNET SERVICES</p>
+                <p class="text">We believe your weekends weren’t made for housework.</p>
+            </div>
+
+            <p class="top">Check Out All internet Services</p>
+            <div class="down">
+  
+            <div class="left">
+    
+                <button class="left-button" id="left-button">
+                    <div class="prev">
+                    </div>
+                </button>
+             </div>
+             <div class="center" id="content">
+                <div class=internal>
+                    <img src="pictures/wifi.jpg" width="350px" height="250px">
+                    <p>Wifi Services</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/cable.jpg" width="350px" height="250px">
+                    <p>Cable Services</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/different-types-of-broadband-internet-connection.jpeg" width="350px" height="250px">
+                    <p>Boardband Services</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/DSL-business.jpg" width="350px" height="250px">
+                    <p>DSL Services</p>
+                    <button>
+                        Get Servie
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+              
+               
+             </div>
+             <div class="right">
+                <button class="right-button" id="right-button">
+                    <div class="next">
+                    </div>
+                </button>
+
+
+            </div>
+<div class="down1">
+    <img src="pictures/internetdoc.png" width="1300px" height="480px">
+    <div class="layer">
+        <h4>Complete Package Of Internet Services</h4>
+        <h5>25% Solid Discounts</h5>
+        <p>Wifi Services + Cable Services <br>Boardband Services + DSL Services</p>
+        <button>
+           Click to Get Service
+        </button>
+    </div>
+</div>
+
+             </div>
+
+             {{>footer}}
+             <script>
+                const rightBtn = document.querySelector('#right-button');
+            const leftBtn = document.querySelector('#left-button');
+            
+            rightBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft += 300;
+            event.preventDefault();
+            });
+            
+            leftBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft -= 300;
+            event.preventDefault();
+            });
+            
+            </script>
+
+
+        </div>
+</body>
+</html>

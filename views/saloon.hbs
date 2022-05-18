@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeSquare/Saloon</title>
+    <link rel="stylesheet" href="/css/saloon.css">
+</head>
+<body>
+    {{>nav}}
+        
+        <div class="grey">
+            <div class="background">
+                <p class="our">ALL TYPES OF SALOON SERVICES</p>
+                <p class="text">Where guests are the canvas and art is created.</p>
+               
+            </div>
+
+            <p class="top">Female Services</p>
+            <div class="down">
+  
+            <div class="left">
+    
+                <button class="left-button" id="left-button">
+                    <div class="pre">
+                    </div>
+                </button>
+             </div>
+             <div class="center" id="content">
+                <div class=internal>
+                    <img src="pictures/hairwash - Copy.jpg" width="350px" height="250px">
+                    <p>Hair Wash</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/haircut - Copy.jpg" width="350px" height="250px">
+                    <p>Hair Cut</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/haircolor.jpg" width="350px" height="250px">
+                    <p>Hair Color</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/hairstraightening.jpg" width="350px" height="250px">
+                    <p>Hair Straightening</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/haircurling.jpg" width="350px" height="250px">
+                    <p>Hair Curling</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                
+             </div>
+             <div class="right">
+                <button class="right-button" id="right-button">
+                    <div class="nex">
+                    </div>
+                </button>
+
+
+            </div>
+            <p class="top1">Male Services</p>
+
+            <div class="male">
+
+                <div class="left">
+    
+                    <button class="left-button" id="left-button">
+                        <div class="pre">
+                        </div>
+                    </button>
+                 </div>
+                 <div class="center" id="content">
+                    <div class=internal>
+                        <img src="pictures/menchildrenhaircut.png" width="350px" height="250px">
+                        <p>Children Hair Cut</p>
+                        <button>
+                            Get Service
+                        </button>
+                        <button class="b">
+                            Starting from $29
+                        </button>
+                    </div>
+                    <div class=internal>
+                        <img src="pictures/men haircut.jpg" width="350px" height="250px">
+                        <p>Hair Cut</p>
+                        <button>
+                            Get Service
+                        </button>
+                        <button class="b">
+                            Starting from $29
+                        </button>
+                    </div>
+                    <div class=internal>
+                        <img src="pictures/menhairdye.png" width="350px" height="250px">
+                        <p>Hair Dye</p>
+                        <button>
+                            Get Service
+                        </button>
+                        <button class="b">
+                            Starting from $29
+                        </button>
+                    </div>
+                    <div class=internal>
+                        <img src="pictures/menhairwash.png" width="350px" height="250px">
+                        <p>Hair Wash</p>
+                        <button>
+                            Get Service
+                        </button>
+                        <button class="b">
+                            Starting from $29
+                        </button>
+                    </div>
+                 
+                 </div>
+                 <div class="right">
+                    <button class="right-button" id="right-button">
+                        <div class="nex">
+                        </div>
+                    </button>
+    
+    
+                </div>
+
+            </div>
+
+            </div>
+            {{>footer}}
+            <script>
+                const rightBtn = document.querySelector('#right-button');
+            const leftBtn = document.querySelector('#left-button');
+            
+            rightBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft += 300;
+            event.preventDefault();
+            });
+            
+            leftBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft -= 300;
+            event.preventDefault();
+            });
+            </script>
+
+         
+</body>
+</html>

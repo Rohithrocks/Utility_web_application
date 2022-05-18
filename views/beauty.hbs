@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeSquare/SPA services</title>
+    <link rel="stylesheet" href="/css/beauty.css">
+</head>
+<body>
+    {{>nav}}
+        <div class="grey">
+            <div class="background">
+                <p class="our">ALL TYPES OF SPA SERVICES</p>
+                <p class="text">We make you look youthful, feel vibrant, and smell awesome.</p>
+                <a href="#ttt"><button>
+                    View Gallery
+                </button></a>
+            </div>
+
+            <p class="top">SPA Services</p>
+            <div class="down">
+  
+            <div class="left">
+    
+                <button class="left-button" id="left-button">
+                    <div class="pre">
+                    </div>
+                </button>
+             </div>
+             <div class="center" id="content">
+                <div class=internal>
+                    <img src="pictures/threading.jpg" width="350px" height="250px">
+                    <p>Threading</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                
+                <div class=internal>
+                    <img src="pictures/facial.jpg" width="350px" height="250px">
+                    <p>Facial</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/pedicure&manicure.jpg" width="350px" height="250px">
+                    <p>Pedicure + Manicure</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/waxing.jpg" width="350px" height="250px">
+                    <p>Waxing</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                
+             </div>
+             <div class="right">
+                <button class="right-button" id="right-button">
+                    <div class="nex">
+                    </div>
+                </button>
+
+
+            </div>
+
+            <!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+
+<p class="ttt" id="ttt">
+    Our Gallery
+</p>
+<div class="w3-container">
+  
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="pictures/pexels-john-tekeridis-3212179 (1).jpg" width="1100px">
+</div>
+
+<div class="w3-display-container mySlides">
+    <img src="pictures/pexels-valeria-boltneva-939836 (1).jpg" width="1100px">
+</div>
+
+<div class="w3-display-container mySlides">
+    <img src="pictures/pexels-antoni-shkraba-5177995 (1).jpg" width="1100px">
+</div>
+
+<div class="w3-display-container mySlides">
+    <img src="pictures/898277-anushkashetty-weddingrumours1.jpg" width="1100px">
+</div>
+
+<div class="w3-display-container mySlides">
+    <img src="pictures/pexels-john-tekeridis-3212164 (1).jpg" width="1100px">
+</div>
+
+<button class="w3-button" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button1" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+</div>
+
+{{>footer}}
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
+            <script>
+                const rightBtn = document.querySelector('#right-button');
+            const leftBtn = document.querySelector('#left-button');
+            
+            rightBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft += 300;
+            event.preventDefault();
+            });
+            
+            leftBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft -= 300;
+            event.preventDefault();
+            });
+            </script>
+</body>
+</html>

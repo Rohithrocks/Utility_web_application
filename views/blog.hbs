@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMESQUARE/Blog</title>
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+
+    
+   
+
+    {{>nav}}
+        
+        <div class="grey">
+            <div class="background">
+                <p class="our">OUR BLOGGING</p>
+                <p class="text">Latest information all times.</p>
+            </div>
+
+            
+<div class="block">
+            <div class="block1">
+                <p class="last">Last modified: 14/03/22</p>
+                <p class="text1">Our passion is to help you with the task that takes up so much of your time. This isn't your typical office job. Cleaning, gardening, pet care, and babysitting are just a few of the household duties we can support you with. You can also enjoy the services such as plumbing, electric repairs, internet services, fixing and repair of cc cameras. 
+                    <p class="text2">Finding time for yourself and relaxing is essential in such a hectic schedule. Rest and self-care are extremely important to us. How about taking use of the beauty services from home? Isn't that fantastic? Spa and salon services are also available at our HomeSquare. The important thing to remember is that we never compromise on our quality and cleanliness standards.</p>
+                     <p class="text3"> As a result, our customers prefer us. Our website is created in a clear and user-friendly manner.</p>
+                   <p class="top">Top 5 Home Maintenance Tips</p>
+                  
+            </div>
+        </div>
+
+<section>
+    <div class="white1 anime">
+        <img src="pictures/pexels-karolina-grabowska-4751973.jpg" width="380px">
+        <h5>GARDENING</h5>
+            <p>While it is critical to water your plants or garden on a daily basis, you must also clean them on a regular basis. Here are a few key points to keep in mind:
+                Remove weeds and unwanted detritus <span class="read-more-text"> from your plant pots and garden.
+                Check your plants for pests or insects. 
+                Mix one and a half teaspoons of mild liquid soap with a litre of water to make a simple pesticide. The solution can be sprayed directly on the plant's damaged areas. Make sure you only spray the solution late at night or early in the morning.
+                </p></span>
+                <button class="readbtn">Read More</button>
+               
+    </div>
+
+  
+    <div class="white2 anime">
+        <img src="pictures/pexels-burak-kebapci-45072.jpg" width="380px">
+      
+            <h5>ELECTRICITY</h5>
+            <p>A regular plan of electrical maintenance is recommended for both old and new properties. Electrical wiring, appliances, switchboards, fittings, and earthing connections must all be in good <span class="read-more-text">order. Checking your metres, indicators, and instruments for appropriate operation is part of a mid-year inspection. You can test the operation of a thermostat or heater while fastening all panel bolts. Annual maintenance, on the other hand, entails a thorough examination of your electrical system. 
+                </p></span> 
+                <button class="readbtn">Read More</button>
+       
+    </div>
+
+   
+    <div class="white3 anime">
+        <img src="pictures/pexels-cottonbro-4108715.jpg" width="380px" height="255px">
+    
+            <h5>CLEANING</h5>
+            <p class="t3">Dusting your entire house once every few months is one of the most vital home cleaning duties. All of your furniture, ceiling fans, windows, and appliances should be cleaned. Don't forget to cover door edges <span class="read-more-text">order. Checking your metres, indicators, and instruments for appropriate operation is part of a mid-year inspection. You can test the operation of a thermostat or heater while fastening all panel bolts. Annual maintenance, on the other hand, entails a thorough examination of your electrical system</span></p>
+            <button class="readbtn">Read More</button>
+    </div>
+</section>
+
+
+
+<section class="aaa">
+    <div class="white4">
+        <img src="pictures/pexels-malte-luk-1669754.jpg" width="380px">
+       
+            <h5>PAINTING</h5>
+            <p>You can look for paint chipping on the outside of your home. Touching up the exterior of your home at least once a year is advised. You have the option of doing the re-painting yourself or hiring a </p>
+                <button class="readbtn">Read More</button>
+
+
+    </div>
+
+  
+    <div class="white5">
+        <img  src="pictures/pexels-heiko-ruth-7859953.jpg" width="380px">
+        
+            <h5>PLUMBING</h5>
+            <p>It's far too easy to take water for granted. Minor plumbing difficulties, on the other hand, can be a nuisance if something goes wrong, and you should call a licensed plumber to solve it as soon as </p>
+                <button class="readbtn">Read More</button>
+    </div>
+
+   
+    
+</section>
+
+<section>
+    <div>
+        <p class="tt1">As a result, booking your service won't take up much of your time. The following are the steps you must take:</p>
+        <div class="i">
+        <img class="i1" src="pictures/touch-screen.png" width="70px">
+        <p class="ip1">Choose a service </p>
+        <img class="i2" src="pictures/clock.png" width="70px">
+        <p class="ip2">Choose your time slot  </p>
+        <img class="i3" src="pictures/sunbathing.png" width="70px">
+        <p class="ip3">Relax and enjoy the services </p>
+    </div>
+</div>
+<hr class="line1">
+<hr class="line2">
+</section>
+        </div>
+
+       {{>footer}}
+
+
+
+
+        <script>
+
+            const parentContainer =  document.querySelector('.anime');
+            
+            parentContainer.addEventListener('click', event=>{
+            
+                const current = event.target;
+            
+                const isReadMoreBtn = current.className.includes('readbtn');
+            
+                if(!isReadMoreBtn) return;
+            
+                const currentText = event.target.parentNode.querySelector('.read-more-text');
+            
+                currentText.classList.toggle('read-more-text--show'); 
+            
+                current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
+            
+            })
+   
+    </script>
+            
+</body>
+</html>

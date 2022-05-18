@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeSquare/Saloon</title>
+    <link rel="stylesheet" href="/css/gardening.css">
+</head>
+<body>
+   
+        {{>nav}}
+
+
+        <div class="grey">
+            <div class="background">
+                <p class="our">ALL TYPES OF GARDEN SERVICES</p>
+                <p class="text">Where guests are the canvas and art is created.</p>
+               
+            </div>
+
+            <p class="top">Check out Garden Services</p>
+            <div class="down">
+  
+            <div class="left">
+    
+                <button class="left-button" id="left-button">
+                    <div class="pre">
+                    </div>
+                </button>
+             </div>
+             <div class="center" id="content">
+                <div class=internal>
+                    <img src="pictures/spring and fall cleanup.jpg" width="350px" height="250px">
+                    <p>Spring and Fall Cleanup</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/pruning.jpeg" width="350px" height="250px">
+                    <p>Pruning</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/mulching.jpg" width="350px" height="250px">
+                    <p>Mulching</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/lawn-mowing.jpg" width="350px" height="250px">
+                    <p>Lawn-mowing</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                
+                
+             </div>
+             <div class="right">
+                <button class="right-button" id="right-button">
+                    <div class="nex">
+                    </div>
+                </button>
+
+
+            </div>
+            
+
+            </div>
+            {{>footer}}
+            <script>
+                const rightBtn = document.querySelector('#right-button');
+            const leftBtn = document.querySelector('#left-button');
+            
+            rightBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft += 300;
+            event.preventDefault();
+            });
+            
+            leftBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft -= 300;
+            event.preventDefault();
+            });
+            </script>
+
+         
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>electric</title>
+    <link rel="stylesheet" href="/css/electric.css">
+</head>
+<body>
+    {{>nav}}
+        
+        <div class="grey">
+            <div class="background">
+                <p class="our">ALL TYPES OF ELECTRIC SERVICES</p>
+                <p class="text">Where guests are the canvas and light is created.</p>
+               
+            </div>
+
+            <p class="top">Small appliances</p>
+            <div class="down">
+  
+            <div class="left">
+    
+                <button class="left-button" id="left-button">
+                    <div class="pre">
+                    </div>
+                </button>
+             </div>
+             <div class="center" id="content">
+                <div class=internal>
+                    <img src="pictures/fan repair.jpg" width="350px" height="250px">
+                    <p>Fan Repair</p>
+                    <button>
+                        Get Serviceggggggggggggggg
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/switch repair.jpg" width="350px" height="250px">
+                    <p>Switch Repair</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/fancy light repair.jpg" width="350px" height="250px">
+                    <p>Light Repair</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/holder repair.jpg" width="350px" height="250px">
+                    <p>Holder Repair</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/3 phase panel board.jpg" width="350px" height="250px">
+                    <p>Panel Board</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+               
+             </div>
+             <div class="right">
+                <button class="right-button" id="right-button">
+                    <div class="nex">
+                    </div>
+                </button>
+
+
+            </div>
+            <p class="top1">Large appliances</p>
+
+            <div class="male">
+
+                <div class="left">
+    
+                    <button class="left-button" id="left-button">
+                        <div class="pre">
+                        </div>
+                    </button>
+                 </div>
+                 <div class="center" id="content">
+                    <div class=internal>
+                        <img src="pictures/wiring.jpg" width="350px" height="250px">
+                        <p>Wiring</p>
+                        <button>
+                            Get Service
+                        </button>
+                        <button class="b">
+                            Starting from $29
+                        </button>
+                    </div>
+                    <div class=internal>
+                        <img src="pictures/inverter repair.jpg" width="350px" height="250px">
+                        <p>Inventer Repair</p>
+                        <button>
+                            Get Service
+                        </button>
+                        <button class="b">
+                            Starting from $29
+                        </button>
+                    </div>
+                    <div class=internal>
+                        <img src="pictures/electric geyser.jpg" width="350px" height="250px">
+                        <p>Electric Geyser</p>
+                        <button>
+                            Get Service
+                        </button>
+                        <button class="b">
+                            Starting from $29
+                        </button>
+                    </div>
+                    <div class=internal>
+                        <img src="pictures/Refrigerator-Repair.jpeg" width="350px" height="250px">
+                        <p>Refrigerator-Repair</p>
+                        <button>
+                            Get Service
+                        </button>
+                        <button class="b">
+                            Starting from $29
+                        </button>
+                    </div>
+                 
+                 </div>
+                 <div class="right">
+                    <button class="right-button" id="right-button">
+                        <div class="nex">
+                        </div>
+                    </button>
+    
+    
+                </div>
+
+            </div>
+
+            </div>
+            {{>footer}}
+            <script>
+                const rightBtn = document.querySelector('#right-button');
+            const leftBtn = document.querySelector('#left-button');
+            
+            rightBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft += 300;
+            event.preventDefault();
+            });
+            
+            leftBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft -= 300;
+            event.preventDefault();
+            });
+            </script>
+
+         
+</body>
+</html>

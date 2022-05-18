@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber</title>
+    <link rel="stylesheet" href="/css/plumber.css">
+</head>
+<body>
+ {{>nav}}
+        
+        <div class="grey">
+            <div class="background">
+                <p class="our">PLUMBER SERVICES</p>
+                <p class="text">We believe your weekends weren’t made for housework.</p>
+            </div>
+
+            <p class="top">Check Out All Plumbing Services</p>
+            <div class="down">
+  
+            <div class="left">
+    
+                <button class="left-button" id="left-button">
+                    <div class="prev">
+                    </div>
+                </button>
+             </div>
+             <div class="center" id="content">
+                <div class=internal>
+                    <img src="pictures/plu1.png" width="350px" height="250px">
+                    <p>Water supply plumber</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/plu2.png" width="350px" height="250px">
+                    <p>Service and repair plumber</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/plu3.png" width="350px" height="250px">
+                    <p>Commercial plumber</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/plu4.png" width="350px" height="250px">
+                    <p>Residential plumber</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+                <div class=internal>
+                    <img src="pictures/plu5.png" width="350px" height="250px">
+                    <p>Sanitary plumber</p>
+                    <button>
+                        Get Service
+                    </button>
+                    <button class="b">
+                        Starting from $29
+                    </button>
+                </div>
+               
+             </div>
+             <div class="right">
+                <button class="right-button" id="right-button">
+                    <div class="next">
+                    </div>
+                </button>
+
+
+            </div>
+<div class="down1">
+    <img src="pictures/plu7.png" width="1300px" height="480px">
+    <div class="layer">
+        <h4>Complete Package Of Plumber Services</h4>
+        <h5>25% Solid Discounts</h5>
+        <p>Water supply plumber + garden repairs + kitchen repairs<br>Washroom plumbing services+ Pressure Washing Services</p>
+        <button>
+           Click to Get Service
+        </button>
+    </div>
+</div>
+
+             </div>
+
+             {{>footer}}
+             <script>
+                const rightBtn = document.querySelector('#right-button');
+            const leftBtn = document.querySelector('#left-button');
+            
+            rightBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft += 300;
+            event.preventDefault();
+            });
+            
+            leftBtn.addEventListener("click", function(event) {
+            const conent = document.querySelector('#content');
+            conent.scrollLeft -= 300;
+            event.preventDefault();
+            });
+            
+            </script>
+
+
+        </div>
+</body>
+</html>
